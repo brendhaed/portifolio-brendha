@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="../assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Portifólio de Brendha Rodrigues</title>
 </head>
 <body class="bg-[#1b1325] text-white">
 
-<header class="flex justify-between items-center px-8 py-6 bg-[#1b1325] relative z-30">
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-8 py-6 bg-[#1b1325]">
   <h1 class="text-xl font-semibold text-white">&lt;brendhaed/&gt;</h1>
 
   <!-- Menu Desktop -->
@@ -18,6 +18,7 @@
     <a href="#inicio" class="hover:text-purple-400">Home</a>
     <a href="#sobre" class="hover:text-purple-400">Sobre</a>
     <a href="#educacao" class="hover:text-purple-400">Educação</a>
+    <a href="#experiencias" class="hover:text-purple-400">Experiências</a>
     <a href="#projetos" class="hover:text-purple-400">Projetos</a>
     <a href="#contato" class="hover:text-purple-400">Contato</a>
   </nav>
@@ -39,23 +40,23 @@
     <a href="#inicio" class="hover:text-purple-400">Home</a>
     <a href="#sobre" class="hover:text-purple-400">Sobre</a>
     <a href="#educacao" class="hover:text-purple-400">Educação</a>
+    <a href="#experiencias" class="hover:text-purple-400">Experiências</a>
     <a href="#projetos" class="hover:text-purple-400">Projetos</a>
     <a href="#contato" class="hover:text-purple-400">Contato</a>
   </nav>
 </div>
 
-
   <!-- Section inicio -->
   <section id="inicio" class="flex flex-col md:flex-row items-center justify-between px-8 md:px-20 py-16 gap-12">
     <div class="max-w-xl text-center md:text-left">
       <h2 class="text-4xl md:text-5xl font-bold mb-4">
-        Olá, me chamo <span class="text-[#64ffda] italic">Brendha</span>
+      Olá, me chamo <span class="text-[#64ffda] italic">Brendha</span>
       </h2>
       <h3 class="text-lg font-semibold mb-2">
         Desenvolvedora Front-End e estudante de Análise e Desenvolvimento de Sistemas
       </h3>
       <p class="text-gray-300 mb-6 text-sm leading-relaxed">
-       Mais de 3 anos de experiência em desenvolvimento Front-End. Com conhecimentos sólidos em HTML, CSS e JavaScript,
+       Com mais de 3 anos de experiência em desenvolvimento Front-End. Com conhecimentos sólidos em HTML, CSS e JavaScript,
        além de criar interfaces modernas e responsivas, prezando pela experiência do usuário e pelas boas práticas de desenvolvimento.
       </p>
       <div class="flex justify-center md:justify-start gap-4">
@@ -75,7 +76,7 @@
   </section>
 
   <!-- section sobre  -->
-   <section id="sobre"class="bg-[#2b1e42] rounded-2xl mx-6 md:mx-20 my-10 p-8 md:p-12 flex flex-col md:flex-row items-center gap-10 text-white">
+ <section id="sobre"class="bg-[#2b1e42] rounded-2xl mx-6 md:mx-20 my-10 p-8 md:p-12 flex flex-col md:flex-row items-center gap-10 text-white">
   <div class="w-full md:w-1/2 flex justify-center">
     <img src="assets/img/foto-perfil/foto-perfil.png" alt="Foto perfil" class="w-80 h-30 rounded-full">
   </div>
@@ -115,6 +116,7 @@
 </section>
 
 <!-- section educação -->
+
 <section id="educacao" class="bg-[#2b1e42] rounded-2xl mx-6 md:mx-20 my-10 p-8 md:p-12 text-white">
   <h1 class="text-[#64ffda] text-sm mb-10 text-center w-full">
     Formação acadêmica
@@ -142,6 +144,39 @@
     </div>
   </div>
 </section>
+
+<!-- section experiências  -->
+
+<section id="experiencias" class="max-w-3xl mx-auto p-8">
+  <h1 class="text-[#64ffda] text-sm mb-10 text-center w-full">Experiências</h1>
+  <div class="relative border-l-4 border-purple-600 ml-4">
+
+    <!-- Item 1 -->
+    <div class="mb-10 ml-6">
+      <div class="absolute w-4 h-4 bg-purple-600 rounded-full mt-1.5 -left-2 border border-white"></div>
+      <h3 class="text-lg font-semibold text-white">Desenvolvedora Front-End</h3>
+      <span class="block mb-2 text-sm font-medium text-gray-400">Jan/2025 - Atual</span>
+      <p class="text-sm text-gray-300">
+        Trabalhando com React, Tailwind e JavaScript para criar aplicações web responsivas.
+      </p>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="mb-10 ml-6">
+      <div class="absolute w-4 h-4 bg-purple-600 rounded-full mt-1.5 -left-2 border border-white"></div>
+      <h3 class="text-lg font-semibold text-white">Estagiária de TI</h3>
+      <span class="block mb-2 text-sm font-medium text-gray-400">Mar/2022 - Set/2022</span>
+      <p class="text-sm text-gray-300">
+        Estágio obrigatório do curso de Técnico em Informática. Onde realizei o desenvolvimento e 
+        manutenção de consultas SQL, com foco na otimização de buscas e melhoria de desempenho em banco de dados 
+        PostgreSQL.Suporte na modelagem de dados, criação de procedures, views e rotinas automatizadas.
+        Análise e resolução de problemas relacionados à integridade e performance do banco de dados.
+      </p>
+    </div>
+
+  </div>
+</section>
+
 
 <!-- section projetos -->
 
@@ -205,7 +240,7 @@
       <img src="assets/img/foto-perfil/foto-perfil.png" alt="Perfil" class="w-24 h-24 mx-auto md:mx-0 rounded-full border-4 border-white mb-4">
 
       <h4 class="text-sm text-purple-400 mb-1">Contato</h4>
-      <h2 class="text-xl font-semibold mb-4">Gostou do meu trabalho? Vamos trabalhar juntos!</h2>
+      <h2 class="text-xl font-semibold mb-4">Gostou do meu trabalho? Entre em contato!</h2>
 
       <p class="text-sm text-gray-300 mb-4">
         Estou sempre disponível para um bate-papo. Mande-me um e-mail para 
